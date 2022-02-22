@@ -1,7 +1,7 @@
 package br.com.alura;
 
 //public class Aula implements Comparable<Aula> {
-public class Aula {
+public class Aula implements Comparable<Aula> {
     private String titulo;
     private int tempo;
 
@@ -25,9 +25,8 @@ public class Aula {
                 " ] ";
     }
 
-
-    /*@Override
+    @Override
     public int compareTo(Aula outraAula) {
-        return this.titulo.compareTo(outraAula.titulo);
-    }*/
+        return this.titulo.compareTo(outraAula.getTitulo());
+    }
 }
