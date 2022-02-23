@@ -48,4 +48,8 @@ public class Curso {
     public void matricula(Aluno aluno) {
         alunos.add(aluno);
     }
+
+    public boolean estaMatriculado(Aluno aluno) {
+        return this.alunos.contains(aluno);
+    }
 }
